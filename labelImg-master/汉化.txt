@@ -1,0 +1,14 @@
+界面汉化：
+1. 更改QT的资源文件  resources/strings/strings-zh-TW.properties   (原来繁体 自行更换成简体)
+2. 修改加载的资源文件  resources.qrc  将<file alias="strings">resources/strings/strings.properties</file> 注释掉
+3. 重新用资源文件resources.qrc生成resoucres.py   (Qt自带将资源文件生成.py)
+4. 重新运行
+
+标签汉化：
+方法一：
+1. 打开data/predefined_classes.txt, 内容为默认标签，可自行添加/删除，可以将这里直接换成中文
+方法二：
+1. 打开data, 新建一个chs_predefined_classes.txt
+2. 自行添加默认标签中的中文标签或者其他自己需要的标签
+3. 将labelImg.py 中的 predefined_classes.txt替换为chs_predefined_classes.txt
+4. 重新运行
